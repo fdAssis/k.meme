@@ -1,19 +1,35 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 import { IoExitOutline } from "react-icons/io5";
+import { signIn, useSession, signOut } from "next-auth/react";
+import Image from "next/image";
+
 import styles from "./styles.module.scss";
 export function SignInButton() {
-  var isUserSignIn: boolean = true;
+  const { data: session, status } = useSession();
 
-  return isUserSignIn ? (
-    <button type="button" className={styles.signInButton}>
-      <FaGithub color="#04D361" />
-      Francisco de Assis
+  return session ? (
+    <button
+      type="button"
+      className={styles.signInButton}
+      onClick={() => signOut()}
+    >
+      <Image
+        src={session.user.image}
+        width={30}
+        height={30}
+        alt="profile image"
+      />
+      {session.user.name}
       <IoExitOutline color="#737380" />
     </button>
   ) : (
-    <button type="button" className={styles.signInButton}>
-      <FaGithub color="#EBA417" />
-      Sing in with GitHub
+    <button
+      type="button"
+      className={styles.signInButton}
+      onClick={() => signIn("google")}
+    >
+      <FaGoogle color="#EBA417" />
+      Sing in with Google
     </button>
   );
 }
