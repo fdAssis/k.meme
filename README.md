@@ -68,7 +68,7 @@ Vídeos explicando de forma simplificada o processo de cada solução na perspec
 - Se o site é simples, sem tantas páginas
 - Quando a performance é extremamente importante
 
-**Exemplos: Landing Page, Blogs, Portfólios**
+  **Exemplos: Landing Page, Blogs, Portfólios**
 
 ### Single Page Application (SPA) - CRA
 
@@ -76,7 +76,7 @@ Vídeos explicando de forma simplificada o processo de cada solução na perspec
 - Quando o usuário faz muitas interações na página e não quero refreshes
 - Quando as informações vão ser diferentes para cada usuário (autenticação, por exemplo)
 
-**Exemplos: Twitter Web, Facebook Web, Spotify Web**
+  **Exemplos: Twitter Web, Facebook Web, Spotify Web**
 
 ### Server Side Rendering (SSR) - NextJS
 
@@ -85,7 +85,7 @@ Vídeos explicando de forma simplificada o processo de cada solução na perspec
 - Quando trabalha com um número muito grande de páginas
 - Quando precisa de uma boa indexação no Google
 
-**Exemplos: Ecommerce, Sites de Notícias**
+  **Exemplos: Ecommerce, Sites de Notícias**
 
 ## Saber mais
 
