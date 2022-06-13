@@ -19,7 +19,7 @@ export function SignInButton() {
         height={30}
         alt="profile image"
       />
-      {session.user.name}
+      <span>{session.user.name}</span>
       <IoExitOutline color="#737380" />
     </button>
   ) : (
@@ -27,6 +27,7 @@ export function SignInButton() {
       type="button"
       className={styles.signInButton}
       onClick={() => signIn("google")}
+      placeholder="Sair da Aplicação"
     >
       <FaGoogle color="#EBA417" />
       Sing in with Google
