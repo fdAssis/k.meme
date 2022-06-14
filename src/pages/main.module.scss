@@ -7,40 +7,60 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.mainContent {
-  max-width: 600px;
 
-  >span {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+  .mainContent {
+    max-width: 600px;
 
-  h1 {
-    font-size: 4.5rem;
-    line-height: 4.5rem;
-    font-weight: 900;
-
-    margin-top: 2rem;
-
-    span {
-      color: var(--cyan-500);
-    }
-  }
-
-  p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    margin-top: 2rem;
-
-    span {
+    >span {
+      font-size: 1.5rem;
       font-weight: bold;
-      color: var(--cyan-500);
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+      font-weight: 900;
+      letter-spacing: 0.03rem;
+      margin-top: 2rem;
+
+      span {
+        color: var(--caramel-500);
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-top: 2rem;
+
+      span {
+        font-weight: bold;
+        color: var(--caramel-500);
+      }
+    }
+
+    button {
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 0;
+      }
     }
   }
 
-  button {
-    margin-top: 2.5rem;
+  @media (max-width: 720px) {
+    img {
+      display: none;
+    }
   }
+
 }
