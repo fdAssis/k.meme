@@ -6,7 +6,7 @@ export function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
         <Image
-          src="/imagens/ig.news.svg"
+          src="/imagens/k.meme.svg"
           alt="ig.news"
           width={108}
           height={30}
