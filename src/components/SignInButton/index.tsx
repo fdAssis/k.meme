@@ -1,4 +1,4 @@
-import { FaGoogle } from "react-icons/fa";
+import { AiFillGoogleCircle } from "react-icons/ai";
 import { IoExitOutline } from "react-icons/io5";
 import { signIn, useSession, signOut } from "next-auth/react";
 import Image from "next/image";
@@ -20,7 +20,7 @@ export function SignInButton() {
         alt="profile image"
       />
       <span>{session.user.name}</span>
-      <IoExitOutline color="#737380" />
+      <IoExitOutline color="#f1f3f5" />
     </button>
   ) : (
     <button
@@ -29,7 +29,7 @@ export function SignInButton() {
       onClick={() => signIn("google")}
       placeholder="Sair da Aplicação"
     >
-      <FaGoogle color="#EBA417" />
+      <AiFillGoogleCircle color="#ffffff" />
       Sing in with Google
     </button>
   );
